@@ -94,8 +94,8 @@
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $username = $_POST['username'];
                     $password = $_POST['password'];
-                    $apiToken = '111-111-111-111-111'; // API Token here ##### find here: https://dashboard.api-aries.online/
-                    $apiUrl = 'https://api.api-aries.online/v1/checkers/pwned-password/?password=' . urlencode($password);
+                    $apiToken = '111-111-111-111-111'; // API Token here ##### find here: https://dashboard.api-aries.com/
+                    $apiUrl = 'https://api.api-aries.com/v1/checkers/pwned-password/?password=' . urlencode($password);
 
                     $ch = curl_init();
 
@@ -139,7 +139,7 @@
             <button type="submit">Login</button>
         </form>
         <div class="powered-by">
-            Powered by <a href="https://api-aries.online">API Aries</a>
+            Powered by <a href="https://api-aries.com">API Aries</a>
         </div>
     </div>
 </body>
